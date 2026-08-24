@@ -22,7 +22,8 @@ The dataset is published as a set of pre-aggregated JSON files, one per rolling 
 | `usage-7.json`   | Last 7 days                    |
 | `usage-30.json`  | Last 30 days                   |
 | `usage-90.json`  | Last 90 days                   |
-| `usage-365.json` | Last 365 days (canonical full) |
+| `usage-365.json` | Last 365 days                  |
+| `usage-730.json` | Last 730 days (canonical full) |
 
 `usage.json` is an alias of the default (365-day) window so consumers can fetch a single stable file without picking a period.
 
@@ -34,7 +35,7 @@ The canonical, full-history file:
 https://raw.githubusercontent.com/aneym/llm-usage/main/usage-365.json
 ```
 
-Swap the filename for `usage-7.json`, `usage-30.json`, or `usage-90.json` to fetch a narrower window, or `usage.json` for the default view.
+Swap the filename for `usage-7.json`, `usage-30.json`, or `usage-90.json` to fetch a narrower window, `usage-730.json` for the full two-year history, or `usage.json` for the default view.
 
 ## Update cadence
 
